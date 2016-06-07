@@ -35,6 +35,12 @@
 .bs(@c:#ccc,@x:0,@y:2px,@z:3px){  //阴影
 	box-shadow: @x @y @z @c;
 }
+.gradient(@a,@b){ //渐变
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(@a), to(@b));
+    background: -moz-linear-gradient(@a, @b 70%);
+    background: linear-gradient(@a, @b 70%);
+    -pie-background: linear-gradient(@a, @b 70%);
+}
 .bgimg(@f:top,@r:0,@g:0,@b:0,@s:0.5,@t:0.1){ //渐变背景
 	background-image: linear-gradient(to @f, rgba(@r,@g,@b,@s), rgba(@r,@g,@b,@s+@t), rgba(@r,@g,@b,@s+@t*2), rgba(@r,@g,@b,@s+@t*3));
 }

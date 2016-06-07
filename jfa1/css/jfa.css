@@ -63,7 +63,8 @@ dl.sflt dt.flt {
 }
 input,
 textarea,
-select {
+select,
+summary {
   outline: none;
 }
 iframe,
